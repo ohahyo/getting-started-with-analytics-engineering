@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: user_count
+    description: number of users in system
+    columns:
+      - name: user_count
+        description: user count
+        test: 
+         - not null

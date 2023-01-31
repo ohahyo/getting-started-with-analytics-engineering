@@ -5,7 +5,7 @@ with
         select
             date_trunc('hour', created_at)
     , count(order_id) as order_count
-        from public.orders
+        from {{source('greenery','orders')}}
         group by 1
     )
 
