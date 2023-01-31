@@ -5,8 +5,7 @@ with
     (
 
         select *
-        from {{ ref
-    ('stg_greenery__orders') }}
+        from {{ ref('stg_greenery__orders') }}
 
 )
 
