@@ -6,5 +6,5 @@ models:
     columns:
       - name: user_count
         description: user count
-        test: 
-         - not null
+        tests: 
+         - not_null
